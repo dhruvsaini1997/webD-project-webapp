@@ -79,7 +79,7 @@ function Quizzes() {
     questions: [],
   });
 
-  const U = `http://localhost:4000/api/Courses/${courseId}/Quizzes`;
+  const U = `https://node-server-cmd.onrender.com/api/Courses/${courseId}/Quizzes`;
   const handleNewQuizChange = (event) => {
     setNewQuiz({ ...newQuiz, [event.target.name]: event.target.value });
   };
