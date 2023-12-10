@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/vendors/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/kanbas/kanbasnavigation/index.css">
+    <link rel="stylesheet" href="/kanbas/courses/index.css">
+    <link rel="stylesheet" href="/kanbas/assignments/index.css">
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/kanbas/profile/index.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <!-- First column -->
+     <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
+                <li><a href="/kanbas/profile/index.html">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <br/>
+                    Account</a></li>
+                <li><a href="/kanbas/dashboard/index.html">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    Dashboard</a></li>
+                <li class="wd-active"><a href="/kanbas/courses/index.html">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <br/>
+                    Courses</a></li>
+                <li><a href=#>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <br/>
+                    Calendar</a></li>
+                <li><a href=#>
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    <br/>
+                    Inbox</a></li>
+                <li><a href=#>
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                    <br/>
+                    History</a></li>
+                <li><a href=#>
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                    <br/>
+                    Studio</a></li>
+                <li><a href=#>
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    <br/>
+                    Commons</a></li>
+                <li><a href=#>
+                    <i class="fa fa-question" aria-hidden="true"></i>
+                    <br/>
+                    Help</a></li>
+            </ul>
+            </div>
+        <!-- Second column -->
+        <div>
+            <ul class="wd-course-navigation">
+                <li><a href="/kanbas/courses/index.html">Home</a></li>
+                <li><a href=#>Modules</a></li>
+                <li><a href=#>Piazza</a></li>
+                <li><a href=#>Zoom Meetings</a></li>
+                <li class="wd-active"><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                <li><a href=#>Quizzes</a></li>
+                <li><a href="/kanbas/courses/grades/grades.html">Grades</a></li>
+                <li><a href=#>People</a></li>
+                <li><a href=#>Panopto Video</a></li>
+                <li><a href=#>Discussions</a></li>
+                <li><a href=#>Announcements</a></li>
+                <li><a href=#>Pages</a></li>
+                <li><a href=#>Files</a></li>
+                <li><a href=#>Rubrics</a></li>
+                <li><a href=#>Outcomes</a></li>
+                <li><a href=#>Collaborations</a></li>
+                <li><a href=#>Syllabus</a></li>
+                <li><a href="/kanbas/courses/coursedetails.html">Settings</a></li>
+            </ul>
+        </div>
+        <!-- Third column -->
+        <div class="wd-flex-grow-1">
+              <!-- bootstrap breadcrumb -->
+              <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="link-danger">CS5610.11550.202410</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <hr>
+            <!-- buttons on top -->
+            <div class="d-flex justify-content-between">
+                <input type="text" id="searchassignments"
+                placeholder="Search for Assignments" class="form-control w-25"/>
+    
+                <div class="d-flex">
+                    <button type="button" class="btn btn-light">Group</button>
+                    <button type="button" class="btn btn-danger">Assignment</button>
+                    <button type="button" class="btn btn-light"><i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></button>
+                </div>
+            </div>
+           
+            <hr>
+            
+            <!-- Assignments -->
+            <ul class="list-group mb-5 rounded-0">
+                <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">ASSIGNMENTS
+                    <div class="d-flex justify-content-between">
+                        <span class="ps-2 badge badge-pill badge-dark rounded">40% of Total</span>
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i>
+                    </div>
+                </li>
+                <!-- Learning objectives -->
+                <!-- A1 -->
+                <a href="/kanbas/assignments/edit.html" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">A1 - ENV + HTML</h5>
+                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                    </div>
+                <p class="mb-1">Week 0</p>
+                <small class="text-muted">Due Sep 18, 2023</small>
+                </a>
+                <!-- A2 -->
+                <a href="/kanbas/assignments/edit.html" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">A2 - CSS + BOOTSTRAP</h5>
+                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                    </div>
+                <p class="mb-1">Week 1</p>
+                <small class="text-muted">Due Sep 22, 2023</small>
+                </a>
+                <!-- A3 -->
+                <a href="/kanbas/assignments/edit.html" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">A3 - JS + REACT</h5>
+                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                    </div>
+                <p class="mb-1">Week 2</p>
+                <small class="text-muted">Due Sep 25, 2023</small>
+                </a>
+
+                <!-- A4 -->
+                <a href="/kanbas/assignments/edit.html" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">A4 - STATE + REDUX</h5>
+                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                    </div>
+                <p class="mb-1">Week 3</p>
+                <small class="text-muted">Due Sep 27, 2023</small>
+                </a>
+
+
+                <!-- A5 -->
+                <a href="/kanbas/assignments/edit.html" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">A5 - NODE + SESSION</h5>
+                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                    </div>
+                <p class="mb-1">Week 4</p>
+                <small class="text-muted">Due Sep 30, 2023</small>
+                </a>
+
+                <!-- A6 -->
+                <a href="/kanbas/assignments/edit.html" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">A6 - MONGO + MONGOOSE</h5>
+                    <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                    </div>
+                <p class="mb-1">Week 5</p>
+                <small class="text-muted">Due Oct 1, 2023</small>
+                </a>
+
+            </ul>
+           <!-- Quizzes -->
+           <ul class="list-group mb-5 rounded-0">
+            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">Quizzes
+                <div class="d-flex justify-content-between">
+                    <span class="ps-2 badge badge-pill badge-dark rounded">10% of Total</span>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i>
+                </div>
+            </li>
+            <!-- Q1 -->
+            <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Q1 - ENV + HTML</h5>
+                <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                </div>
+            <p class="mb-1">Week 0</p>
+            <small class="text-muted">Due Sep 18, 2023</small>
+            </a>
+            <!-- Q2 -->
+            <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Q2 - CSS + BOOTSTRAP</h5>
+                <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                </div>
+            <p class="mb-1">Week 1</p>
+            <small class="text-muted">Due Sep 22, 2023</small>
+            </a>
+            <!-- Q3 -->
+            <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Q3 - JS + REACT</h5>
+                <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                </div>
+            <p class="mb-1">Week 2</p>
+            <small class="text-muted">Due Sep 25, 2023</small>
+            </a>
+
+            <!-- Q4 -->
+            <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Q4 - NODE</h5>
+                <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                </div>
+            <p class="mb-1">Week 3</p>
+            <small class="text-muted">Due Sep 27, 2023</small>
+            </a>
+
+
+            <!-- Q5 -->
+            <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Q5 - MONGO</h5>
+                <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                </div>
+            <p class="mb-1">Week 4</p>
+            <small class="text-muted">Due Sep 30, 2023</small>
+            </a>
+
+            </ul>
+       
+           <!-- Exams -->
+           <ul class="list-group mb-5 rounded-0">
+            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">Exams
+                <div class="d-flex justify-content-between">
+                    <span class="ps-2 badge badge-pill badge-dark rounded">20% of Total</span>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i>
+                </div>
+            </li>
+            <!-- Exam1 -->
+            <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+               <div class="d-flex w-100 justify-content-between">
+               <h5 class="mb-1">Midterm</h5>
+               <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                   <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+               </div>
+           <p class="mb-1">Week 6</p>
+           <small class="text-muted">Due Oct 7, 2023</small>
+           </a>
+           <!-- Exam2 -->
+           <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+               <div class="d-flex w-100 justify-content-between">
+               <h5 class="mb-1">Final</h5>
+               <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                   <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+               </div>
+           <p class="mb-1">Week 7</p>
+           <small class="text-muted">Due Oct 10, 2023</small>
+           </a>
+            </ul>
+            
+           <!-- Projects -->
+           <ul class="list-group mb-5 rounded-0">
+            <li class="list-group-item list-group-item-secondary d-flex justify-content-between align-items-center">Exams
+                <div class="d-flex justify-content-between">
+                    <span class="ps-2 badge badge-pill badge-dark rounded">30% of Total</span>
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i>
+                </div>
+            </li>
+            
+            
+            <!-- Project1 -->
+            <a href="#" class="list-group-item list-group-item-action ps-5 d-flex justify-content-between flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Project</h5>
+                <small class="text-muted"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v ps-2" aria-hidden="true"></i></small>
+                </div>
+            <p class="mb-1">Week 6</p>
+            <small class="text-muted">Due December 10, 2023</small>
+            </a>
+            
+            </ul>     
+    </div>
+</body>
+</html>

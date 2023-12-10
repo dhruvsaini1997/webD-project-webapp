@@ -1,0 +1,26 @@
+
+.wd-dashboard .list-group-item {
+    color: black;
+    background-color: white;
+    border-style: solid;
+}
+
+.wd-dashboard {
+    margin: 10px;
+}
+
+
+.wd-dashboard .content{
+    margin: 10px;
+}
+
+.card-img-top {
+    background-color: #2474c4;
+    height:150px;
+}
+
+.card {
+    width: 300px;
+}
+
+ 

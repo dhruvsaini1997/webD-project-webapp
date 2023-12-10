@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/vendors/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/kanbas/kanbasnavigation/index.css">
+    <link rel="stylesheet" href="/kanbas/courses/index.css">
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/kanbas/profile/index.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!-- First column -->
+    <div class="wd-flex-row-container">
+      <div class="wd-bg-color-black">
+          <ul class="wd-kanbas-navigation">
+            <form id="assignment-edit">
+
+              <li><a href="/kanbas/profile/index.html">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                  <br/>
+                  Account</a></li>
+              <li><a href="/kanbas/dashboard/index.html">
+                  <i class="fa fa-tachometer" aria-hidden="true"></i>
+                  Dashboard</a></li>
+              <li class="wd-active"><a href="/kanbas/courses/index.html">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  <br/>
+                  Courses</a></li>
+              <li><a href=#>
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  <br/>
+                  Calendar</a></li>
+              <li><a href=#>
+                  <i class="fa fa-inbox" aria-hidden="true"></i>
+                  <br/>
+                  Inbox</a></li>
+              <li><a href=#>
+                  <i class="fa fa-history" aria-hidden="true"></i>
+                  <br/>
+                  History</a></li>
+              <li><a href=#>
+                  <i class="fa fa-desktop" aria-hidden="true"></i>
+                  <br/>
+                  Studio</a></li>
+              <li><a href=#>
+                  <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                  <br/>
+                  Commons</a></li>
+              <li><a href=#>
+                  <i class="fa fa-question" aria-hidden="true"></i>
+                  <br/>
+                  Help</a></li>
+          </ul>
+          </div>
+      <!-- Second column -->
+      <div>
+          <ul class="wd-course-navigation">
+              <li><a href="/kanbas/courses/index.html">Home</a></li>
+              <li><a href=#>Modules</a></li>
+              <li><a href=#>Piazza</a></li>
+              <li><a href=#>Zoom Meetings</a></li>
+              <li class="wd-active"><a href="/kanbas/assignments/index.html">Assignments</a></li>
+              <li><a href=#>Quizzes</a></li>
+              <li><a href="/kanbas/courses/grades/grades.html">Grades</a></li>
+              <li><a href=#>People</a></li>
+              <li><a href=#>Panopto Video</a></li>
+              <li><a href=#>Discussions</a></li>
+              <li><a href=#>Announcements</a></li>
+              <li><a href=#>Pages</a></li>
+              <li><a href=#>Files</a></li>
+              <li><a href=#>Rubrics</a></li>
+              <li><a href=#>Outcomes</a></li>
+              <li><a href=#>Collaborations</a></li>
+              <li><a href=#>Syllabus</a></li>
+              <li><a href="/kanbas/courses/coursedetails.html">Settings</a></li>
+          </ul>
+      </div>
+      <!-- Third column -->
+
+      <div class="wd-flex-grow-1">
+        <!-- bootstrap breadcrumb -->
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#" class="link-danger">CS5610.11550.202410</a></li>
+          <li class="breadcrumb-item"><a href="#" class="link-danger">Assignments</a></li>
+          <li class="breadcrumb-item active" aria-current="page">A1 - ENV...</li>
+          </ol>
+        </nav>
+        <hr>
+        <!-- buttons on top -->
+        <div class="float-end">
+                <span><i class="fa fa-check-circle mx-2 " aria-hidden="true"></i>Published
+                <button type="button" class="btn btn-light mx-2"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+              </span>
+        </div>
+        <br/>
+        <hr>
+        <h3>Assignment Name</h3>
+        <input type="text" id="text-fields-assignment-name"
+        placeholder="Assignment Name" value="A1 - ENV + HTML" class="form-control"/>
+        <br/>
+        <br/>
+
+        <textarea class="form-control" rows="3">This is the assignment description. In later assignments the content will be different depending which assignment you click. The screen provides a form for faculty to edit the assignment including the Assignment Name, Description, Points, and Due Date. Use Bootstrap classes such as form-control, float-end, btn, btn-success, row, and col, to style the Edit Assignment screen as close to the screen shots shown below.</textarea>
+        <br/>
+        
+        <div class="container">
+          <!-- Points -->
+          <div class="row">
+            <div class="col-2 text-end">
+              Points
+            </div>
+            <div class="col-10">
+              <input type="text" id="text-fields-assignment-name"
+              placeholder="Points" value="100" class="form-control"/>
+            </div>
+          </div>
+          <br/>
+          <!-- Assignment Group -->
+          <div class="row">
+            <div class="col-2 text-end">
+              Assignment Group
+            </div>
+            <div class="col-10">
+              <select id="select-one-assignment-group" class="form-control">
+                <option selected value="assignments">ASSIGNMENTS</option>
+            </select>
+            </div>
+          </div>
+          <br/>
+
+          <!-- Display Grade as -->
+          <div class="row">
+            <div class="col-2 text-end">
+              Display Grade as
+            </div>
+            <div class="col-10">
+              <select id="select-one-display-grade" class="form-control">
+                <option selected value="assignments">Percentage</option>
+            </select>
+            </div>
+          </div>
+          <br/>
+
+          <!-- Submission Type -->
+          <div class="row">
+            <div class="col-2 text-end">
+              Submission Type
+            </div>
+            <div class="col-10">
+              <div class="form-control">
+                <form>
+                  <div class="form-group p-3">
+                    <select id="select-one-display-grade" class="form-control">
+                      <option selected value="assignments">Online</option>
+                    </select>
+                  
+                  <div class="form-group">
+                    <label for="formGroupExampleInput2" class="mt-2"><b>Online Entry Options</b>
+                    
+                    <input type="checkbox" value="WEBSITEURL"
+                      name="check-genre" id="chkbox-websiteurl"class="form-check-input"/>
+                    <label for="chkbox-websiteurl">Website Url</label>   
+                    
+
+                      <input type="checkbox" value="TEXTENTRY"
+                      name="check-genre" id="chkbox-textentry" class="form-check-input"/>
+                    <label for="chkbox-websiteurl">Text Entry</label> 
+                  
+                    <input type="checkbox" value="WEBSITEURL"
+                      name="check-genre" id="chkbox-websiteurl" class="form-check-input"/>
+                    <label for="chkbox-websiteurl">Website Url</label>  
+            
+                    <input type="checkbox" value="MEDIARECORDINGS"
+                      name="check-genre" id="chkbox-mediarecordings" class="form-check-input"/>
+                    <label for="chkbox-mediarecordings">Media Recordings</label>  
+            
+                    <input type="checkbox" value="STUDENTANNOTATION"
+                      name="check-genre" id="chkbox-studentannotation" class="form-check-input"/>
+                    <label for="chkbox-studentannotation">Student Annotation</label> 
+            
+                    <input type="checkbox" value="FILEUPLOADS"
+                      name="check-genre" id="chkbox-fileuploads"class="form-check-input"/>
+                    <label for="chkbox-fileuploads">File Uploads</label> 
+                  </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br/>
+
+          <!-- Submission Attempts -->
+          <div class="row">
+            <div class="col-2 text-end">
+              Submission Attempts
+            </div>
+            <div class="col-10">
+              <div class="form-control">
+                <form>
+                  <div class="form-group p-3">
+                    <label for="select-one-submission-attempts"><b>Allowed Attempts</b></label> 
+
+                    <select id="select-one-submission-attempts" class="form-control">
+                      <option selected value="unlimited">Unlimited</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br/>
+
+          <!-- Plagiarism Review -->
+          <div class="row">
+            <div class="col-2 text-end">
+              Plagiarism Review
+            </div>
+            <div class="col-10">
+              <div class="form-control">
+                <form>
+                  <div class="form-group p-3">
+                    <select id="select-one-plagiarism-review" class="form-control">
+                      <option selected value="none">None</option>
+                    </select>                   
+                    <hr>
+                    <label for="select-one-submission-attempts">Show reports to students</label>    <br/>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle disabled" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Immediately
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br/>
+
+          <!-- Assign To -->
+          <div class="row">
+            <div class="col-2 text-end">
+              Assign
+            </div>
+            <div class="col-10">
+              <div class="form-control">
+                <form>
+                  <div class="form-group p-3">
+                    
+                    <label for="select-one-submission-attempts"><b>Assign to</b></label>    <br/>
+                    <input type="text" id="text-fields-assign-to" class="form-control" value="Everyone"/>
+                    <br/>
+                    <label><b>Due</b></label><br/>
+                    <input type="date"
+                        id="text-fields-due"
+                        value="2021-01-01" class="form-control"/><br/> 
+                    <br/>
+            
+                    <div class="row">
+                      <div class="col-6">
+                        <label>Available from</label><br/>
+                        <input type="date"
+                            id="text-fields-available-from"
+                            value="2021-01-01" class="form-control"/><br/> 
+                        <br/>
+                      </div>
+                      <div class="col-6">
+                        <label>Until</label><br/>
+                        <input type="date"
+                            id="text-fields-available-from"
+                            value="2021-01-01" class="form-control"/><br/> 
+                        <br/>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <br/>
+
+          
+        </div>
+
+      
+        <hr>
+
+        <div class="float-end m-2">
+          <button type="button" class="btn btn-light">Cancel</button>
+          <button type="button" class="btn btn-danger">Save</button>
+        </div>
+        <br/>
+        <br/>
+        <hr>
+
+        </form>
+                
+      </div>
+
+</body>
+</html>

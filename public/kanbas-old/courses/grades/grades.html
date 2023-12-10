@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/vendors/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/kanbas/kanbasnavigation/index.css">
+    <link rel="stylesheet" href="/kanbas/courses/index.css">
+    <link rel="stylesheet" href="/kanbas/courses/grades/index.css">
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <!-- First column -->
+     <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
+                <li><a href="/kanbas/profile/index.html">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <br/>
+                    Account</a></li>
+                <li><a href="/kanbas/dashboard/index.html">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    Dashboard</a></li>
+                <li class="wd-active"><a href="/kanbas/courses/index.html">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <br/>
+                    Courses</a></li>
+                <li><a href=#>
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <br/>
+                    Calendar</a></li>
+                <li><a href=#>
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    <br/>
+                    Inbox</a></li>
+                <li><a href=#>
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                    <br/>
+                    History</a></li>
+                <li><a href=#>
+                    <i class="fa fa-desktop" aria-hidden="true"></i>
+                    <br/>
+                    Studio</a></li>
+                <li><a href=#>
+                    <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    <br/>
+                    Commons</a></li>
+                <li><a href=#>
+                    <i class="fa fa-question" aria-hidden="true"></i>
+                    <br/>
+                    Help</a></li>
+            </ul>
+            </div>
+        <!-- Second column -->
+        <div>
+            <ul class="wd-course-navigation">
+                <li><a href="/kanbas/courses/index.html">Home</a></li>
+                <li><a href=#>Modules</a></li>
+                <li><a href=#>Piazza</a></li>
+                <li><a href=#>Zoom Meetings</a></li>
+                <li><a href="/kanbas/assignments/index.html">Assignments</a></li>
+                <li><a href=#>Quizzes</a></li>
+                <li class="wd-active"><a href="/kanbas/courses/grades/grades.html">Grades</a></li>
+                <li><a href=#>People</a></li>
+                <li><a href=#>Panopto Video</a></li>
+                <li><a href=#>Discussions</a></li>
+                <li><a href=#>Announcements</a></li>
+                <li><a href=#>Pages</a></li>
+                <li><a href=#>Files</a></li>
+                <li><a href=#>Rubrics</a></li>
+                <li><a href=#>Outcomes</a></li>
+                <li><a href=#>Collaborations</a></li>
+                <li><a href=#>Syllabus</a></li>
+                <li><a href="/kanbas/courses/coursedetails.html">Settings</a></li>
+            </ul>
+        </div>
+        <!-- Third column -->
+        <div class="wd-flex-grow-1">
+
+            <!-- bootstrap breadcrumb -->
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#" class="link-danger">CS5610.11550.202410</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
+            </nav>
+            <hr>
+
+            <!-- buttons on top -->
+            <div class="float-end">
+                <span>
+                    <button type="button" class="btn btn-light"><i class="fa fa-download" aria-hidden="true"></i>
+                        Import</button>
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-upload" aria-hidden="true"></i>Export
+                    </button>
+                    <button type="button" class="btn btn-light"><i class="fa fa-cog" aria-hidden="true"></i></button>
+                </span>
+            </div>
+            <br/>
+
+            <!-- Searches -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <b>Student Names</b>
+                        <input id="text-fields-students" placeholder="Search Students" class="form-control"/>
+                        
+                    </div>
+
+                    <div class="col-6">
+                        <b>Assignment Names</b>
+                        <input id="text-fields-assignments" placeholder="Search Assignments" class="form-control"/></div>
+                </div>
+                <br/>
+                <button type="button" class="btn btn-light mx-4"><i class="fa fa-filter" aria-hidden="true"></i>
+                    Apply Filters</button>
+                <br/>
+                <br/>
+                <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-striped" width="100%">
+                                <thead style="background-color: lightgray">
+                                    <tr>
+                                        <th>Student Name</th>
+                                        <th>A1 SETUP<br/>Out of 100</th>
+                                        <th>A2 HTML<br/>Out of 100</th>
+                                        <th>A3 CSS<br/>Out of 100</th>
+                                        <th>A4 BOOTSTRAP<br/>Out of 100</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alice Wonderland</td>
+                                        <td style="text-align: center">98</td>
+                                        <td style="text-align: center">89</td>
+                                        <td style="text-align: center">87</td>
+                                        <td style="text-align: center">90</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Princess Leia</td>
+                                        <td style="text-align: center">98</td>
+                                        <td style="text-align: center">80</td>
+                                        <td style="text-align: center">87</td>
+                                        <td style="text-align: center">86</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Luke SkyWalker</td>
+                                        <td >
+                                            <input type="text" value="99" style="text-align: center" class="form-control">
+                                        </td>
+                                        <td style="text-align: center">88</td>
+                                        <td style="text-align: center">97</td>
+                                        <td style="text-align: center">82</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Han Solo</td>
+                                        <td style="text-align: center">83</td>
+                                        <td style="text-align: center">99</td>
+                                        <td style="text-align: center">94</td>
+                                        <td>
+                                            <input type="text" value="98" style="text-align: center" class="form-control">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+            </div>
+
+
+            <!-- grades table-->
+            
+        </div>
+</body>
+</html>
